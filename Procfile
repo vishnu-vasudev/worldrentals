@@ -1,0 +1,1 @@
+web: gunicorn worldrentals.wsgi --log-file -
