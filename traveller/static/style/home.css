@@ -1,0 +1,148 @@
+.navbar-custom {
+  background-color: black;
+}
+
+#logo {
+  height:100px;
+  margin-left: 30px;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(“data:image/svg+xml;..”);
+}
+
+.navbar {
+  height:120px;
+}
+
+
+/* .centered {
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+} */
+
+.searchbar input[type=search]{
+  height: 50px;
+  border-radius: 20px;
+}
+
+.searchbar button {
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  background-color: brown;
+  border-style: none;
+  padding-top: 2px;
+  color:aliceblue;
+}
+
+.date {
+  height: 50px;
+  border-radius: 20px;
+  border-style: none;
+  width: 170px;
+}
+
+.date:focus {
+  border-radius: 20px;
+  height: 50px;
+  border-style: none;
+  width: 170px;
+}
+
+.date: {
+  border-radius: 20px;
+  height: 50px;
+  border-style: none;
+  width: 170px;
+}
+
+.signin {
+  margin-left: 250px;
+}
+
+.signin a[role=button]{
+  border-radius: 20px;
+  background-color: brown;
+  border-style: none;
+}
+
+.signin a[role=button] :visited {
+  background-color: brown;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 10px 20px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  padding-top:20px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+#grid-text {
+  background-color: rgb(46, 46, 46);
+  color: rgb(141, 136, 175);
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.grid-head {
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+
+
+
+

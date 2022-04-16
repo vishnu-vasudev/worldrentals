@@ -1,0 +1,40 @@
+.logo img {
+    width:70%;
+    margin-left: 70%;
+    margin-top: 23px;
+    /* padding-right: 5px; */
+  }
+  .col-1 h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:whitesmoke;
+  }
+  .firstrow {
+    background-color: black;
+    
+  }
+  .searchbtn input {
+    float: left;
+    border-radius: 18px;
+    width:94%;
+    margin-top: 2%;
+    height: 45px;
+  }
+  .searchbtn button {
+    height:45px;
+    margin-top:17px;
+    border:none;
+    color:rgb(134, 198, 209);
+  }
+  .signin button {
+    margin-top: 6%;
+  }
+  #openingimage {
+    background-image: url("/static/images/opening1.jpg");
+    height:700px;
+    width:1519px;
+    padding-left: 0;
+    margin-left: 0;
+    background-size: cover;
+    background-position: left;
+  }
+  

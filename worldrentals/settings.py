@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-a8$-d=i&-#sx)5j2)vz(9$+nc88s=4q=i@1_-_+tu=j78edqge
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['worldrentals.herokuapp.com']
+ALLOWED_HOSTS = ['worldrentals.herokuapp.com',
+'127.0.0.1']
 
 
 # Application definition
@@ -58,7 +59,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR/'traveller/templates',
+            BASE_DIR,'templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
