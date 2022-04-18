@@ -1,0 +1,17 @@
+.host-btn {
+    width: 300px;
+    border-radius: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-style: none;
+}
+
+.seller-carousel {
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.property-details {
+    margin-bottom: 120px;
+}

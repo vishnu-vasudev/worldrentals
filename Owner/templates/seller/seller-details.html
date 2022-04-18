@@ -1,0 +1,65 @@
+{% extends 'seller/seller_header.html' %}
+{% load static %}
+{% block content %}
+
+<center><h3><br><br><br> Tell us more about your property</h3><br></center>
+<div class="container property-details">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6"><center>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text bg-dark" for="inputGroupSelect01" style="color:aliceblue;">Bedrooms</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Select</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                  <option value="4">Four</option>
+                </select>
+              </div>
+              
+              <div class="input-group mb-3">
+                <select class="custom-select" id="inputGroupSelect02">
+                  <option selected>Select</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                  <option value="4">Four</option>
+                </select>
+                <div class="input-group-append">
+                  <label class="input-group-text bg-dark" for="inputGroupSelect02" style="color:aliceblue;">Bathrooms</label>
+                </div>
+              </div>
+              
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text bg-dark" for="inputGroupSelect01" style="color:aliceblue;">Property type</label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Select</option>
+                  <option value="1">Villa</option>
+                  <option value="2">Resort</option>
+                  <option value="3">Cottages</option>
+                  <option value="4">Cabins</option>
+                  <option value="4">Other</option>
+                </select>
+              </div>
+              
+              <div class="input-group flex-nowrap">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-dark" id="addon-wrapping" style="color: aliceblue;">Location</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+            </div><br>
+            <a href=""><button type="button" class="btn btn-primary bg-danger btn-lg">Next</button></a>
+        </center>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+
+
+
+{% endblock %}

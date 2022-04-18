@@ -1,8 +1,8 @@
-{% extends 'header.html' %}
+{% extends 'seller/seller_header.html' %}
 {% load static %}
 {% block content %}
 
-<div class="container">
+  <div class="container">
     <div class="row">
         <div class="col-sm"></div>        
         <div class="col-sm traveller-signup-content">
@@ -11,11 +11,10 @@
             <input type="text" placeholder="First Name">
             <input type="text" placeholder="Second Name">
             <input type="password" placeholder="Password">
-            <center><button class="bg-danger">Sign Up</button></center>
+            <center><a href="{% url 'seller-details' %}"><button href="" class="bg-danger">Next</button></a></center>
         </div>
         <div class="col-sm"></div>
     </div>
-</div>
-
+  </div>
 
 {% endblock %}
