@@ -1,0 +1,79 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+  <h3><br> Gravity Ville</h3>
+  <p>Kozhikode, Kerala</p>
+</div>
+
+<div class="container">
+</div>
+<div class="container image-gallery">
+  <div class="row first-row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <img src="{% static 'images/resort1/booking-page/bookingpageimage1.jpg' %}" class="img-fluid" alt="...">
+    </div>
+  </div>
+  <div class="row second-row">
+    <div class="col-1"></div>
+    <div class="col-3">
+      <img src="{% static 'images/resort1/booking-page/bookingpageimage2.jpg' %}" class="img-fluid" alt="...">
+    </div>
+    <div class="col-4"><img src="{% static 'images/resort1/booking-page/bookingpageimage3.jpg' %}" class="img-fluid" alt="...">
+    </div>
+    <div class="col-3">
+      <img src="{% static 'images/resort1/booking-page/bookingpageimage4.jpg' %}" class="img-fluid" alt="...">
+    </div>
+  </div>
+</div>
+
+<div class="container sticky-checkin">
+  <h5><br> ₹6000/Night</h5>
+  <form action="">
+    <input id="check-in" type="search" placeholder="Check-in" onfocus="(this.type = 'date')">
+    <input id="check-out" type="search" placeholder="Check-out" onfocus="(this.type = 'date')">
+    <input id="guests" type="number" placeholder="Guests"><br>
+    <p id="p-checkin"></p><p id="p-checkout"></p><p id="p-guests"></p>
+    <a class="btn btn-primary availability-btn" onclick="return availability_validate()" href="{% url 'booking-confirm' %}">Check Availability</a>
+  </form>
+  <hr>
+</div><br>
+
+<div class="container">
+ <h4>Stylish townhouse with WiFi, private washer/dryer, patio, and full kitchen</h4>
+ <p>Set in a quiet area of town in front of a hillside, this intimate townhouse is set up 
+  perfectly for guests who want their own space that's still close to town. Take in the fresh air on the spacious back patio, or 
+  kick back in the well-furnished living room. Each bedroom is upstairs, so there's no worry of keeping anyone up who wants to head 
+  to bed early. The fully equipped full kitchen features all the equipment guests need to prepare tasty meals together. 
+  Additional amenities include a private washer/dryer and room-darkening shades that ensure a good night's sleep.</p><br><hr>
+</div>
+
+<div class="container"><br>
+  <h4>Amenities</h4>
+  <ul>
+    <li><h6> Swimming Pool</h6></li>
+    <li><h6>Wi-fi</h6></li>
+    <li><h6>Pet Friendly</h6></li>
+    <li><h6>Natural View</h6></li>
+    <li><h6>Balcony</h6></li>
+  </ul><br><hr>
+</div>
+
+<div class="container"><br>
+  <h4>Reviews</h4>
+  <span class="fa fa-star checked"></span> 3
+  <br><br>
+  <h5>Excellent Experience</h5>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span> 3/5
+  <p><br>Our family came down for spring break with kids and we truly enjoyed the experience at HHI and staying here was icing on the cake.
+    .The condo was beautifully decorated and had everything...superb location to the beach and very nice host who communicated effectively 
+    with us the whole time..Will definitely be back!!!! You won't regret this condo!!!!!</p>
+</div>
+
+{% endblock %}

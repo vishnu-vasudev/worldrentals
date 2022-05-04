@@ -1,0 +1,30 @@
+{% extends 'seller/seller_header.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container property-list">
+        <center><h2><br>Properties</h2><br></center>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="">
+                    <img src="{% static 'Pictures/1.jpeg' %}" class="rounded float-left" height="200" alt="...">
+                    <h4>&ensp; Gravity Ville</h4>
+                    <h6>&ensp;&ensp; Kozhikode, Kerala</h6>
+                    <p>&ensp;&ensp;4 Bedrooms</p>
+                    <h5>&ensp;&ensp;₹6000/Night</h5>
+                </a>
+            </li><br>
+            <li class="list-group-item">
+                <a href="">
+                    <img src="{% static 'Pictures/1.jpg' %}" class="rounded float-left" height="200" alt="...">
+                    <h4>&ensp; Stonewood Nature Resort</h4>
+                    <h6>&ensp;&ensp; Kochi, Kerala</h6>
+                    <p>&ensp;&ensp;4 Bedrooms</p>
+                    <h5>&ensp;&ensp;₹8000/Night</h5>
+                </a>
+            </li><br>
+        </ul>
+
+</div>
+
+{% endblock %}

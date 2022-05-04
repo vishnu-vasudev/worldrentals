@@ -1,0 +1,42 @@
+{% extends 'seller/seller_header.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row">
+    <div class="col-md-6 property-list" style="background-color:white;">
+        <h4><br> Edit your properties</h4><br>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="">
+                    <img src="{% static 'Pictures/1.jpeg' %}" class="rounded float-left" height="150" width="250" alt="...">
+                    <h4>&ensp; Gravity Ville</h4>
+                    <h6>&ensp;&ensp; Kozhikode, Kerala</h6>
+                    <p>&ensp;&ensp;4 Bedrooms</p>
+                    <h5>&ensp;&ensp;₹6000/Night</h5>
+                    &ensp;<button class="accept-booking-btn">Change rent amount</button>
+                    <button class="reject-booking-btn">Remove this property</button>
+                </a>
+            </li><br>
+            <li class="list-group-item">
+                <a href="">
+                    <img src="{% static 'Pictures/1.jpg' %}" class="rounded float-left" height="150" alt="...">
+                    <h4>&ensp; Stonewood Nature Resort</h4>
+                    <h6>&ensp;&ensp; Kochi, Kerala</h6>
+                    <p>&ensp;&ensp;4 Bedrooms</p>
+                    <h5>&ensp;&ensp;₹8000/Night</h5>
+                    &ensp;<button class="accept-booking-btn">Change rent amount</button>
+                    <button class="reject-booking-btn">Remove this property</button>
+                </a>
+            </li><br>
+            <li class="list-group-item">
+                <a href="{% url 'new-seller-details' %}"><button type="button" class="btn btn-danger">Add new</button></a>
+            </li><br>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h4><br>Your account details</h4>
+        
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'seller/seller_header.html' %}
+{% load static %}
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-4 seller-list">
+        <ul>
+            <li><a href="{% url 'properties' %}"><h3>My Properties</h3></a></li>
+            <li><a href="{% url 'bookings-page' %}"><h3>Bookings</h3></a></li>
+            <li><a href="{% url 'seller-settings' %}"><h3>Settings</h3></a></li>
+        </ul>
+    </div>
+    <div class="col-8">
+        <div class="container recent-reviews">
+            <h4><br>Recent Reviews</h4>
+            <h6><br>Alan Marti- 3/5 <br>Exellent Experience</h6>
+            <p>Our family came down for spring break with kids and we truly enjoyed the experience at HHI and
+             staying here was icing on the cake. .The condo was beautifully decorated and had everything...
+             superb location to the beach and very nice host who communicated effectively with us the whole time..
+             Will definitely be back!!!! You won't regret this condo!!!!!
+            </p>
+            <h6><br>Onyama Limba- 4/5 <br>Nice place to stay
+            </h6>
+            <p>Our family came down for spring break with kids and we truly enjoyed the experience at HHI and
+             staying here was icing on the cake. .The condo was beautifully decorated and had everything...
+             superb location to the beach and very nice host who communicated effectively with us the whole time..
+             Will definitely be back!!!! You won't regret this condo!!!!!
+            </p><br>
+        </div><br>
+        
+
+    </div>
+</div>
+
+{% endblock %}

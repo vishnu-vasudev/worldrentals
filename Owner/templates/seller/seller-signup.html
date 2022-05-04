@@ -7,11 +7,11 @@
         <div class="col-sm"></div>        
         <div class="col-sm traveller-signup-content">
             <h3><br> Create an Owner account</h3>
-            <input type="text" placeholder="Email address">
-            <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Second Name">
-            <input type="password" placeholder="Password">
-            <center><a href="{% url 'seller-details' %}"><button href="" class="bg-danger">Next</button></a></center>
+            <input id="new-seller-email" type="text" placeholder="Email address"><p id="newseller-email"></p>
+            <input id="new-seller-firstname" type="text" placeholder="First Name"><p id="newseller-firstname"></p>
+            <input id="new-seller-secondname" type="text" placeholder="Second Name"><p id="newseller-secondname"></p>
+            <input id="new-seller-password" type="password" placeholder="Password"><p id="newseller-password"></p>
+            <center><a href="{% url 'new-seller-details' %}"><button onclick="return new_seller_account_validate()" class="bg-danger universal-btn">Next</button></a></center>
         </div>
         <div class="col-sm"></div>
     </div>

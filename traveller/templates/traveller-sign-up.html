@@ -7,11 +7,11 @@
         <div class="col-sm"></div>        
         <div class="col-sm traveller-signup-content">
             <h3><br> Create a Traveller account</h3>
-            <input type="text" placeholder="Email address">
-            <input type="text" placeholder="First Name">
-            <input type="text" placeholder="Second Name">
-            <input type="password" placeholder="Password">
-            <center><button class="bg-danger">Sign Up</button></center>
+            <input id="new-traveller-email" type="text" placeholder="Email address"><p id="newtraveller-email"></p>
+            <input id="new-traveller-firstname" type="text" placeholder="First Name"><p id="newtraveller-firstname"></p>
+            <input id="new-traveller-secondname" type="text" placeholder="Second Name"><p id="newtraveller-secondname"></p>
+            <input id="new-traveller-password" type="password" placeholder="Password"><p id="newtraveller-password"></p>
+            <center><a href="{% url 'home' %}"><button onclick="return new_traveller_account_validate()" class="bg-danger universal-btn">Sign Up</button></a></center>
         </div>
         <div class="col-sm"></div>
     </div>

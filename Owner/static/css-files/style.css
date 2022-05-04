@@ -1,3 +1,5 @@
+
+
 .host-btn {
     width: 300px;
     border-radius: 40px;
@@ -14,4 +16,64 @@
 
 .property-details {
     margin-bottom: 120px;
+}
+
+.property-list {
+    margin-top: 10px;
+}
+
+.seller-list ul {
+    margin-top: 20px;
+  }
+  
+  .seller-list li {
+    padding-top: 10px;
+    list-style: none;
+  }
+  
+  .seller-list a {
+    color:black;
+  }
+  
+  .seller-list a:hover {
+    text-decoration: none;
+    color: cadetblue;
+  }
+
+  .seller-list {
+      background-color: aliceblue;
+  }
+
+  .recent-reviews {
+      background-color: azure;
+      border-radius: 10px;
+      margin-top: 20px;
+  }
+
+  .property-list li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .property-list {
+      background-color:bisque;
+      margin-bottom: 10px;
+      border-radius: 20px;
+  }
+  
+.booking {
+    width: 20%;
+    border-radius: 20px;
+    background-color: white;
+    margin: 10px;
+}
+
+.accept-booking-btn {
+    color: cornflowerblue;
+    border-style: none;
+}
+
+.reject-booking-btn {
+    border-style: none;
+    color: darkgray;
 }

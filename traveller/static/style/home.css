@@ -15,14 +15,6 @@
   height:120px;
 }
 
-
-/* .centered {
-  position: absolute;
-  left: 50%;
-  top:50%;
-  transform: translate(-50%, -50%);
-} */
-
 .searchbar input[type=search]{
   height: 50px;
   border-radius: 20px;
@@ -73,6 +65,23 @@
   background-color: brown;
 }
 
+.universal-btn {
+  margin-top: 30px;
+margin-bottom: 60px;
+width: 70%;
+height: 40px;
+border-radius: 20px;
+border-style: none;
+color: aliceblue;
+}
+
+.traveller-signup-content input {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -107,7 +116,7 @@ body {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
-  padding-top:20px;
+  padding-top: 20px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -162,22 +171,76 @@ body {
   font-weight: 400;
 }
 
-.traveller-signup-content input {
-  margin-top: 20px;
-  width: 100%;
-  height: 50px;
-  border-radius: 5px;
+
+
+.villa-name {
+  margin-top: 50px;
 }
 
-.traveller-signup-content button {
-  margin-top: 30px;
-  margin-bottom: 60px;
-  width: 70%;
-  height: 40px;
-  border-radius: 20px;
+.first-row {
+  padding: 10px;
+}
+
+.first-row img, .second-row img {
+  border-radius: 10px;
+}
+
+.sticky-checkin form , .sticky-checkin h5 {
+  margin-left: 200px;
+}
+
+
+.sticky-checkin input[type="search"] {
+  width: 140px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.sticky-checkin input[type='number'] {
+  width: 285px;
+  height: 50px; 
+  border-radius: 10px;
+}
+
+.sticky-checkin button {
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 140px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: rgb(11, 36, 100);
   border-style: none;
   color: aliceblue;
 }
+
+.sticky-checkin {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .sticky-checkin form ,.sticky-checkin h5 ,.sticky-checkin button {
+    margin-left: 0px;
+  }
+}
+
+.checked {
+  color: orange;
+}
+
+.availability-btn {
+  margin-left: 190px;
+  margin-top: 10px;
+}
+
+.proceed-btn {
+  margin-left: 200px;
+  border-style: none;
+  border-radius: 10px;
+}
+
+
 
 
 

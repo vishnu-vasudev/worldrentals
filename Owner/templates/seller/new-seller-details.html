@@ -18,6 +18,7 @@
                   <option value="3">Three</option>
                   <option value="4">Four</option>
                 </select>
+                <p id="p-bedrooms"></p>
               </div>
               
               <div class="input-group mb-3">
@@ -28,9 +29,11 @@
                   <option value="3">Three</option>
                   <option value="4">Four</option>
                 </select>
+                
                 <div class="input-group-append">
                   <label class="input-group-text bg-dark" for="inputGroupSelect02" style="color:aliceblue;">Bathrooms</label>
                 </div>
+                <p id="p-bathrooms"></p>
               </div>
               
               <div class="input-group mb-3">
@@ -45,15 +48,16 @@
                   <option value="4">Cabins</option>
                   <option value="4">Other</option>
                 </select>
+                <p id="p-property-type"></p>
               </div>
               
               <div class="input-group flex-nowrap">
                 <div class="input-group-prepend">
                   <span class="input-group-text bg-dark" id="addon-wrapping" style="color: aliceblue;">Location</span>
                 </div>
-                <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
-            </div><br>
-            <a href=""><button type="button" class="btn btn-primary bg-danger btn-lg">Next</button></a>
+                <input id="location" type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+            </div><p id="p-location"></p><br>
+            <a href="{% url 'property-address' %}"><button onclick="return property_details_validate()" type="button" class="btn btn-primary bg-danger btn-lg">Next</button></a>
         </center>
         </div>
         <div class="col-3"></div>

@@ -1,0 +1,21 @@
+{% extends 'seller/seller_header.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm"></div>        
+        <div class="col-sm traveller-signup-content">
+            <h3><br> Enter the Address</h3>
+            <input id="add-country" type="text" placeholder="Country"><p id="p-country"></p>
+            <input id="add-street" type="text" placeholder="Street address"><p id="p-street"></p>
+            <input id="add-city" type="text" placeholder="City"><p id="p-city"></p>
+            <input id="add-state" class="inline-data" type="text" placeholder="State"><p id="p-state"></p>
+            <input id="add-zip" class="inline-data" type="text" placeholder="ZIPcode"><p id="p-zip"></p>
+            <center><a href="{% url 'new-seller-lastpage' %}"><button onclick="return property_address_validate()" href="" class="bg-danger universal-btn">Next</button></a></center>
+        </div>
+        <div class="col-sm"></div>
+    </div>
+  </div>
+
+{% endblock %}

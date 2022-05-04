@@ -1,0 +1,35 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <br><h2>Confirm your Stay</h2><br>
+            <h6>Dates : 9-11 May</h6>
+            <h6>Guests : 2</h6><br><hr>
+        </div>
+        <div class="col-6">
+            <br><div class="confirm-box">
+                <img src="{% static 'Pictures/1.jpeg' %}" class="rounded float-left" height="100" alt="...">
+                <h4>&ensp; Gravity Ville</h4>
+                <h6>&ensp;&ensp; Kozhikode, Kerala</h6>
+                <p>&ensp;&ensp;4 Bedrooms</p><br><hr>
+                <h4>Price Details</h4>
+                <div>
+                <p class="float-left" style="clear: left;">₹6000 x 2 nights</p>
+                <p class="float-right" style="clear: right;">₹12000</p>
+                <p class="float-left" style="clear: left;">Service charge</p>
+                <p class="float-right" style="clear: right;">₹300</p>
+                <p class="float-left" style="clear: left;">Other tax</p>
+                <p class="float-right" style="clear: right;">₹900</p>
+                <h5 class="float-left" style="clear: left;">Total</h5>
+                <h5 class="float-right" style="clear: right;">₹13200.00</h5>
+                </div>
+                <a class="float-left btn btn-primary availability-btn" style="clear:left;" href="{% url 'booking-confirm' %}">Proceed to pay</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

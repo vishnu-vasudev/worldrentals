@@ -1,0 +1,59 @@
+.admin-navbar {
+    height:50px;
+}
+
+.admin-login {
+    border: 1px solid black;
+    width: 30%;
+    height: 250px;
+    margin-top: 90px;
+    background-color:rgb(31, 57, 97);
+    color: white;
+    border-radius: 20px;
+}
+
+.admin-login a {
+    width: 100px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .admin-login {
+        width:100%;
+    }
+  }
+
+.booking {
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.block-heading {
+    background-color: cadetblue;
+    color: white;
+    margin-top: 0;
+    padding-top: 0%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .booking {
+        width:100%;
+    }
+}
+
+.block-btn {
+    background-color: brown;
+    border-style: none;
+    color: white;
+    height: 35px;
+    border-radius: 20px;
+}
+
+

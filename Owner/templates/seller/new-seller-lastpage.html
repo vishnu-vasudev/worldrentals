@@ -1,0 +1,30 @@
+{% extends 'seller/seller_header.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <h5><br>Upload your property images</h5><br>
+    <div class="input-group mb-3">
+        <div class="custom-file">
+          <input id="property-image" type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+          <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+        </div>
+    </div>
+    <br><p id="p-propertyimage"></p><hr>
+    
+    <br><h5>Set up your Property Rent</h5><br>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">₹</span>
+        </div>
+        <input id="property-rent" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+        <div class="input-group-append">
+            <span class="input-group-text">/ Night</span>
+        </div>
+    </div>
+    <p id="p-propertyrent"></p>
+
+    <center><a href="{% url 'seller-page' %}"><button onclick="return property_rent_validate()" class="bg-danger universal-btn" style="width: 15%;">Finish</button></a></center>
+</div>
+
+{% endblock %}
