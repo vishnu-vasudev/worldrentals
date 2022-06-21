@@ -1,3 +1,3 @@
 # worldrentals
-Heroku app link given below:
+Heroku app link: 
 https://worldrentals.herokuapp.com/
