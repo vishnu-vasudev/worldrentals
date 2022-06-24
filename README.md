@@ -1,3 +1,2 @@
 # worldrentals
-Heroku app link: 
-https://worldrentals.herokuapp.com/
+Project is done in master branch.
